@@ -8,7 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/menu">Menu</RouterLink>
+        <RouterLink to="/menu" exact-active-class="active">Menu</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>  
       </nav>
@@ -77,6 +77,13 @@ nav {
 
 }
 
+nav a.router-link-active {
+  color: #000000;
+}
+
+nav a.router-link-active:hover {
+  background-color: transparent;
+}
 
 
 nav a.router-link-exact-active {

@@ -8,6 +8,7 @@ import EntrantesView from '../views/EntrantesView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  
   routes: [
     {
       path: '/',
@@ -29,12 +30,84 @@ const router = createRouter({
       path: '/menu',
       name: 'menu',
       component: MenuView,
+      redirect: { name: "entrantes" },
+
       children: [
         {
-          path: 'entrantes',  // /menu/entrantes
+          path: 'entrantes',  
           name: 'entrantes',
           component: EntrantesView
+          
         },
+
+        {
+          path: 'pizzas',  
+          name: 'pizzas',
+          component: EntrantesView
+        },
+        {
+          path: 'pastas',  
+          name: 'pastas',
+          component: EntrantesView
+        },
+        {
+          path: 'hamburguesas',  
+          name: 'hamburguesas',
+          component: EntrantesView
+        },
+        {
+          path: 'sandwiches',  
+          name: 'sandwiches',
+          component: EntrantesView
+        },
+        {
+          path: 'turca',  
+          name: 'comida turca',
+          component: EntrantesView
+        },
+        {
+          path: 'ensaladas',  
+          name: 'ensaladas',
+          component: EntrantesView
+        },
+        {
+          path: 'carnes',  
+          name: 'carnes',
+          component: EntrantesView
+        },
+        {
+          path: 'baguettes',  
+          name: 'baguettes',
+          component: EntrantesView
+        },
+        {
+          path: 'bocatas',  
+          name: 'bocatas',
+          component: EntrantesView
+        },
+        {
+          path: 'montaditos',  
+          name: 'montaditos',
+          component: EntrantesView
+        },
+        {
+          path: 'menus',  
+          name: 'menús',
+          component: EntrantesView
+        },
+        {
+          path: 'refrescos',  
+          name: 'refrescos',
+          component: EntrantesView
+        },
+        {
+          path: 'postres',  
+          name: 'postres',
+          component: EntrantesView
+        },
+
+
+
       ]
     }
     

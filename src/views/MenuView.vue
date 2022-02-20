@@ -26,6 +26,28 @@ import { RouterLink, RouterView } from 'vue-router'
   </div>
 </template>
 
+
+<script>
+export default {
+  
+  data () {
+    return {
+      
+    }
+  },
+  mounted () {
+    
+      
+    
+
+  }
+}
+</script>
+
+
+
+
+
 <style>
 .navbar-menu {
     max-width: 100%;
